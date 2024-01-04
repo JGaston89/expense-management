@@ -19,12 +19,14 @@ function TrasactionForm(){
     <div>
       <form onSubmit={onSubmit}>
         <input type="text" placeholder="Enter description"
-          onChange={(e) => setDescription(e.target.value)} />
+          onChange={(e) => setDescription(e.target.value)}
+          className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full" />
 
         <input type="number" placeholder="00.00" step="0.01"
-          onChange={(e) => setAmount(e.target.value)} />
+          onChange={(e) => setAmount(e.target.value)}
+          className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full" />
 
-        <button>
+        <button className="bg-green-600 text-white px-3 py-2 rounded-lg block mb-2 w-full">
           Add Transaction
         </button>
       </form>
