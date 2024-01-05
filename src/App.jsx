@@ -4,6 +4,7 @@ import Balance from './components/Balance'
 import TransactionList from './components/transaction/TransactionList'
 import TrasactionForm from './components/transaction/TransactionForm'
 import IncomeExpenses from './components/IncomeExpenses'
+import ExpenseChart from './components/ExpenseChart'
 
 
 function App(){
@@ -20,7 +21,8 @@ function App(){
             <Balance/>
             <TrasactionForm/>
           </div>
-          <div className='w-full'>
+          <div className='flex flex-col flex-1'>
+            <ExpenseChart/>
             <TransactionList/>
           </div>
         </div>
