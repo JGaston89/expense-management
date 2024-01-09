@@ -7,6 +7,7 @@ function TrasactionForm(){
   const [amount , setAmount] = useState(0);
 
   const onSubmit = (e) => {
+    window.location.reload();
     e.preventDefault();
     addTransaction({
       id: window.crypto.randomUUID(),
@@ -17,7 +18,7 @@ function TrasactionForm(){
 
   return(
     <div>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit}  >
         <input type="text" placeholder="Enter description"
           onChange={(e) => setDescription(e.target.value)}
           className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full" />

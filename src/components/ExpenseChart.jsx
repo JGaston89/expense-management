@@ -19,13 +19,13 @@ function ExpenseChart(){
     <VictoryPie
       colorScale={["#e74c3c" , "#2ecc71"]}
         data={[
-      { x: "Expenses", y:  totalExpensesPercentage},
-      { x: "Incomes", y: totalncomePercentage },
-      ]}
+          { x: "Expenses", y:  totalExpensesPercentage},
+          { x: "Incomes", y: totalncomePercentage },
+        ]}
       animate= {{
-        duration: 200
+        duration: 200,
       }}
-      labels = {( {datum} ) => `${datum.y}%`}
+      labels = {({datum}) => `${datum.y}%`}
       labelComponent={
       <VictoryLabel
       angle= {45}
